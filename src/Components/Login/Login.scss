@@ -1,0 +1,93 @@
+.login-page{
+  width: 100vw;
+  height: 100vh;
+  background-color: #403C3C;
+  animation-name: anim;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+
+  .container{
+    width: 100%;
+    max-width: 350px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+
+    .logo, .card {
+      text-align: center;
+    }
+
+    .card {
+      white-space: pre-wrap;
+    }
+  }
+
+  input{
+    font-family: 'Ubuntu', sans-serif;
+    display: block;
+    outline: 0;
+    width: 300px;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 0 auto 10px auto;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    background-color: #403C3C;
+    font-weight: 300;
+  }
+
+  button{
+    font-family: 'Ubuntu', sans-serif;
+    display: block;
+    outline: 0;
+    width: 200px;
+    border: 1px;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin: 0 auto 10px auto;
+    text-align: center;
+    font-size: 20px;
+    color: #403C3C;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: 0.25s;
+
+    &:hover{
+      letter-spacing: 2px;
+      width: 200px;
+      opacity: 0.5;
+    }
+
+    &:disabled {
+      background-color: #313131;
+      color: #737373;
+      cursor: default;
+
+      &:hover {
+        letter-spacing: normal;
+        opacity: 1;
+      }
+    }
+  }
+
+  @keyframes anim{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+
+  .preloader-wrapper {
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
